@@ -123,3 +123,30 @@ NEXT_PUBLIC_API_URL=https://your-new-backend-url.com
 
 - `GET /api/message`: Get the integration message
   - Returns: `{"message": "You've successfully integrated the backend!"}`
+---
+
+## Docker Setup
+
+### Backend (FastAPI)
+
+Build the Docker image:
+docker build -t backend-app .
+Run the container:
+docker run -d -p 8000:8000 --name backend backend-app
+Verify the backend is running:
+docker ps
+API will be available at:
+http://localhost:8000
+---
+
+## GitHub Authentication
+
+GitHub authentication was completed using Git Credential Manager via browser-based login.
+
+---
+
+## Submission Notes
+
+- Backend successfully dockerized
+- Docker image builds and runs without errors
+- Code pushed to GitHub repository
